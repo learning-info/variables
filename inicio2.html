@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Nuestro primer script en JavaScript</title>
+    <script type="text/javascript">
+       let precio_producto = 75.62; // Para decimal se utiliza el punto
+       let nombre_producto = "SET LEGO 120 PZS. \"+10\"";
+       let caracteristica_producto = "COLORES:\n AZUL \n ROJO"
+       let disponible_producto = false; // Tipo Booleano (true = 1 | false = 0)
+       
+       let producto1 = ["SET LEGO 120 PZS. \"+10\"", 75.62, "COLORES:\n AZUL \n ROJO", true];
+       let producto2 = ["VIDEOJUEGO PS4", 250.54, 150, "CATGORIA:\n ACCION", false];
+        // Los array son agrupaciones de datos, y que oueden tener n cantidad.
+
+       console.log(producto1, producto2);
+
+       /* Utilizar comillas simple si en la cadena de texto
+       
+       EJEMPLO 1 : "La letra 'J' es una letra del abecedario."
+       EJEMPLO 2 : 'La letra "M" es una letra del abecedario.'
+
+       se esaran comillas dobles o viceversa*/
+
+       /* Utilizar caracter de escape, que el simbolo es 
+       ➡ \
+       EJEMPLO 1 : "SET LEGO 120 PZS. \"+10\""
+       EJEMPLO 1 : ""
+       */
+       alert(caracteristica_producto);
+    </script>
+</head>
+
+<body>
+    <p>Esta página nos sirve para probar nuestro primer script</p>
+</body>
+
+</html>
