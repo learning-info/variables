@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        FLUJO COMPRA DE MEGAS
+        1. Solicita nombre (Proceso)
+        2. Solicita apellido (Proceso)
+        3. Comprar mega (Proceso)
+        */
+
+        // Usuario ingrese su nombre
+        function solicitarNombre () {
+            /*
+            INSTRUCCIONES
+            */
+           let nombre = "";
+           nombre = prompt("Ingresa tu nombre:");
+           alert(nombre);
+        }
+
+        // Usuario ingrese su apellido
+        function solicitarApellido () {
+            let apellido = "";
+            apellido = prompt("Ingresa tu apellido:");
+            alert(apellido);
+        }
+
+        // Comprar megas
+        function comprarInternet () {
+            let saldo = 0;
+            saldo = prompt("Ingrese el saldo de credito de su linea telefonica: ");
+            // 2bs 150 mb + 4 msj
+            if (saldo == 2) {
+                alert("COMPRA EXITOSA ✔. HAS COMPRADO EL PAQUETE DE 150 MB + 4 MSJ");
+            }
+        }
+        
+        // Invocacion
+        //solicitarNombre();
+        //solicitarApellido();
+        //comprarInternet();
+
+        /*
+        FLUJO - con funcion
+        1. Ingresar nombre de un producto ✔
+        2. Mostrar en una alert el nombre del producto ✔
+        3. Ingresar precio de un producto ✔
+        4. Mostrar en una alert el precio del producto ✔
+        */
+        function nombreProducto () {
+            let nombreProducto = "";
+            nombreProducto = prompt("Ingrese nombre de un producto");
+            alert(nombreProducto);
+        }
+
+        function precioProducto () {
+            let precioProducto = 0;
+            precioProducto = prompt("Ingrese precio del producto");
+            alert(precioProducto);
+        }
+
+        nombreProducto();
+        precioProducto();
+
+    </script>
+</body>
+</html>

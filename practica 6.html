@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log('B' == 'b');    // FALSE ❌
+        console.log('B' != 'b');    // TRUE ✔
+        console.log('C' === 'C');   // TRUE ✔
+        console.log("d" === 'd');   // TRUE ✔
+        console.log(9 === 9);       // TRUE ✔
+        console.log(598 === 9);     // FALSE ❌
+        console.log(598 != 9);      // TRUE ✔
+        
+        console.log(598 < 9);       // FALSE ❌
+        console.log(598 > 9);       // TRUE ✔
+        console.log(10 >= 9);       // TRUE ✔
+        console.log(9 >= 9);        // TRUE ✔
+        console.log(9 <= 9);        // TRUE ✔
+
+        let igualdad = false;
+        igualdad = (10 === 9); //false 
+        console.log(!igualdad);
+
+        let igualdad2 = false;
+        igualdad2 = (5 > 3); // TRUE
+        console.log(!igualdad2); // FALSE
+        // != (Operador)
+        // !true
+        // false
+
+        let igualdad3 = true;
+        igualdad3 = (11 > 22); // FALSE 
+        console.log(!igualdad3); // TRUE
+
+        console.log((5>2) && (5<8)); // (TRUE) && (TRUE)
+        // true
+        console.log((1 > 3) || (0 == 2));
+        // false
+
+        console.log((2 != 3) || (0 == 2)); // true
+        //          true         false
+        // true
+        console.log((2==2) && (1==1));
+        //          true       true
+        // true
+        console.log((2!=3) || (3!= 2));
+        //           true      true
+        // true
+
+        let baseDato = "chavarriaj84@gmail.com";
+        let correo = "";
+        correo = prompt("Ingrese su correo: ");
+        alert(correo == baseDato);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

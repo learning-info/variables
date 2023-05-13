@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>PRACTICA 7</h1>
+    <h3 id="mensaje_producto"></h3>
+    <h5 id="mensaje_producto2"></h5>
+    <script>
+        let producto1 = [
+            "MOUSE",
+            80,
+            "TIPO: GAMER",
+            "RED DRAGON"
+        ];
+        let producto2 = [
+            "TECLADO",
+            160,
+            "DELUX"
+        ];
+        let precio = 0;
+        precio = prompt("Ingrese precio: ");
+        if (precio >= 80) {
+            //200
+            document.getElementById('mensaje_producto').innerHTML = "PUEDE COMPRAR EL MOUSE";
+            console.log(producto1);
+        } 
+
+        if (precio >=160) {
+            document.getElementById('mensaje_producto2').innerHTML = "PUEDE COMPRAR EL TECLADO";
+            console.log(producto2);
+        } 
+
+        if (precio < 80) {
+            console.error("NO ALCANZA PARA COMPRAR UN PRODUCTO.");
+        } 
+
+
+    </script>
+</body>
+</html>
