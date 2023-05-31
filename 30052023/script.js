@@ -62,6 +62,16 @@ switch (a) {
 }*/
 
 
+let correo;
+let password;
+
+correo = prompt("Ingrese su correo");
+if (correo == "admin@sistema.com") {
+    password = prompt("Ingresa contraseña");
+} else {
+    alert(`Vuelva a intentarlo ${new Date().getDate()}`);
+}
+
 
 
 
